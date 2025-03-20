@@ -20,7 +20,7 @@ Create a data/input.txt file and add some numbers (one per line), for example:
 
 Start a Local PHP Server
 
-open http://localhost:8000/index.php in your browser.
+open your local host in your browser
 
 PHP for Backend Processing
 
