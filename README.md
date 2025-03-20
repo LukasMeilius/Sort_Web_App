@@ -1,64 +1,38 @@
-# Algorithm and Web Development Assessment
+Sorting Numbers Web App
 
-## Task Description:
-1. Read a list of integers from the provided 'input.txt' file (one number per line)
-2. Sort the list in ascending order
-3. Create a simple web page that:
-   - Processes the file and sorting logic on the backend using PHP
-   - Displays the sorted list on a web page
-   - Shows the highest number from the list in a form input
-   - Implements functionality to increase or decrease this value by 5
-   - Ensures the value cannot go below zero
-   - Includes basic styling for readability
+This simple PHP-based web application reads numbers from a file, sorts them, and displays them in an HTML list. 
 
-## Technical Requirements:
-- Backend processing must be implemented in PHP
-- Frontend can use HTML5 features and JavaScript if necessary
-- The solution should be simple and efficient
+Features
 
-## Getting Started
+Reads numbers from input.txt file.
 
-### Option 1: Using Docker (Recommended)
-A Docker environment has been provided for your convenience.
+Sorts numbers in ascending order.
 
-1. Make sure you have Docker and Docker Compose installed on your system
-2. Clone this repository
-3. Navigate to the repository directory
-4. Run `docker-compose up -d`
-5. Access the application at http://localhost:8080
+Displays the sorted list in an HTML.
 
-### Option 2: Local Setup
-If you prefer not to use Docker:
+Highlights the maximum number in an input field.
 
-1. Set up a local PHP environment (XAMPP, WAMP, MAMP, etc.)
-2. Clone this repository to your web server's document root
-3. Access the application via your local web server
+JavaScript buttons allow increasing/decreasing the max number by 5.
 
-### Wireframe
-![wireframe](wireframe.jpg "how it might look")
+How to Run the Project
 
+Create a data/input.txt file and add some numbers (one per line), for example:
 
-### Project Structure
-```
-.
-├── docker-compose.yml         # Docker configuration
-├── data/                      # Data directory
-│   └── input.txt              # Input file with random numbers
-├── src/                       # Source code directory
-│   ├── index.php              # Main entry point
-│   └── css/                   # CSS files (if needed)
-└── README.md                  # This file
-```
+Start a Local PHP Server
 
-## Submission:
-- Create a git (Github/Gitlab) repository with your solution
-- Include a README.md explaining how to run your code and any design decisions
-- Ensure your code is well-commented and follows best practices
+open http://localhost:8000/index.php in your browser.
 
-## Evaluation Criteria:
-- Correctness of the algorithm implementation
-- Understanding of time/space complexity
-- Proper use of PHP for backend processing
-- Efficient implementation of the increment/decrement functionality
-- Code organization and readability
-- Error handling
+PHP for Backend Processing
+
+Reads from input.txt and processes numbers.
+
+Uses sort($numbers) for sorting.
+
+Handles missing file errors.
+
+JavaScript for UI Interactivity
+
+increaseValue() and decreaseValue() functions allow for the dynamic modification of the maximum number.
+
+Prevents the number from going below 0.
+
