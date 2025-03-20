@@ -42,7 +42,7 @@
         function decreaseValue() {
             let inputField = document.getElementById("numberInput");
             let currentValue = parseInt(inputField.value);
-            inputField.value = Math.max(0, currentValue - 5); // Ensures it doesn't go below 0
+            inputField.value = Math.max(0, currentValue - 5); 
         }
     </script>
 </body>
