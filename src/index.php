@@ -6,3 +6,5 @@
     
     sort($numbers); 
 
+    $max_number = !empty($numbers) ? max($numbers) : 0;
+
