@@ -8,3 +8,7 @@
 
     $max_number = !empty($numbers) ? max($numbers) : 0;
 
+    foreach ($numbers as $num) {
+    $sorted_numbers[] = "<li>".htmlspecialchars($num)."</li>" ;
+}
+        
