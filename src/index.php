@@ -28,3 +28,22 @@
         <ul> 
             <?php echo join($sorted_numbers); ?>    
         </ul>
+        <input type="text" id="numberInput" value="<?php echo $max_number ?>" readonly>
+        <button onclick="increaseValue()">+5</button>
+        <button onclick="decreaseValue()">-5</button>
+    </div>
+    <script>
+        function increaseValue() {
+            let inputField = document.getElementById("numberInput");
+            let currentValue = parseInt(inputField.value);
+            inputField.value = currentValue + 5;
+        }
+
+        function decreaseValue() {
+            let inputField = document.getElementById("numberInput");
+            let currentValue = parseInt(inputField.value);
+            inputField.value = Math.max(0, currentValue - 5); // Ensures it doesn't go below 0
+        }
+    </script>
+</body>
+</html>
